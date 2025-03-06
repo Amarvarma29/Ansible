@@ -4,5 +4,5 @@
   tasks:
   - name: task 1 to install niginix
     ansible.builtin.package: #hetrongenous module thst csn work for all distributions
-      name: nginix
+      name: nginx
       state: present
