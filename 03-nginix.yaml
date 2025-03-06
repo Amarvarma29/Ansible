@@ -1,7 +1,8 @@
 - name: install nginix
   hosts: 54.88.23.70
+  become: yes
   tasks:
   - name: task 1 to install niginix
-    ansible.builtin.package:
+    ansible.builtin.package: #hetrongenous module thst csn work for all distributions
       name: nginix
       state: present
