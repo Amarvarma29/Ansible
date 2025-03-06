@@ -10,4 +10,4 @@
   tasks: #giving variables from the prompt
   - name: 
     ansible.builtin.debug: 
-      msg: "Hi i am learning {{course}},duration is {{Duration}} ,Trainer is {{trainer}}"
+      msg: "Hi i am learning {{course}},duration is {{duration}} ,Trainer is {{trainer}}"
