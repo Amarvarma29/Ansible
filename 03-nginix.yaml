@@ -1,6 +1,6 @@
 - name: install nginix
   hosts: 54.88.23.70
-  become: yes
+  become: yes #take sudo access
   tasks:
   - name: task 1 to install niginix
     ansible.builtin.package: #hetrongenous module thst csn work for all distributions
