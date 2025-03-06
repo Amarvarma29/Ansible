@@ -3,9 +3,9 @@
   vars_prompt:
   - name: course
     prompt: please enter the couse name
-  - name: tariner
+  - name: trainer
     prompt: please enter the trainer name
-  - name: duartion
+  - name: duration
 
   tasks: #giving variables from the prompt
   - name: 
