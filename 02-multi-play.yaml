@@ -4,4 +4,12 @@
   - name: play-01 Task-01
     ansible.builtin.debug:
       msg: This is from play 01 and module 01
+
+
+- name: play-02
+  hosts: web 
+  tasks:
+  - name: play02 and task 2
+    ansible.builtin.debug:
+      msg: thsi is from play 2 and task 02
       
