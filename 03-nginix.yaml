@@ -1,5 +1,5 @@
 - name: install nginix
-  hosts: web
+  hosts: 54.88.23.70
   tasks:
   - name: task 1 to install niginix
     ansible.builtin.package:
