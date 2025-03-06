@@ -1,0 +1,6 @@
+- name: paly o1
+  hosts: web
+  tasks:
+  - name: play-01 Task-01
+    ansible.builtin.debug:
+    
