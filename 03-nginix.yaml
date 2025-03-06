@@ -6,3 +6,8 @@
     ansible.builtin.package: #hetrongenous module thst csn work for all distributions
       name: nginx
       state: present
+  - name: to start run the service
+    ansible.builtin.service:
+      name: nginx
+      state: enabled
+      
