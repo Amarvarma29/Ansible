@@ -1,17 +1,17 @@
 - name: devops course information
-  hosts: web
-  connection: web
+  hosts: local
+  connection: local #for local hosts
   vars: 
     course: "devops with 321"
     duration: 120
-    topics: #list
-    - linux
-    - shell
-    - terraform
-    - Aws
-    - k8
-    live: true #bollean
-    tools: #map/dictionary
+  topics: #list
+  - linux
+  - shell
+  - terraform
+  - Aws
+  - k8
+  live: true #bollean
+  tools: #map/dictionary
       ci: jenkins
       cm: ansible
       cloud: aws
