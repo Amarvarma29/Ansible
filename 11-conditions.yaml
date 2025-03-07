@@ -8,5 +8,5 @@
   tasks: 
   - name: 
     ansible.builtin.debug: 
-    when: {{numer}} > 10
       msg: "number is {{number}}"
+    when: {{number}} > 10
