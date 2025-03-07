@@ -8,6 +8,6 @@
   tasks: 
   - name: 
     ansible.builtin.debug: 
-      msg: "number is grtaer then  {{number}}"
+      msg: "  {{number}} grtaer then 10"
     when:  number | int > 10
     
