@@ -1,0 +1,12 @@
+- name: Tocheck the user exist or not if not to create
+  hosts: web
+  become: yes
+  tasks: 
+  - name:
+    ansible.builtin.command: id expence
+    register: user
+  
+  - name: print the user information
+    ansible.builtin.debug:
+      msg: "user info is {{user}}""
+      
