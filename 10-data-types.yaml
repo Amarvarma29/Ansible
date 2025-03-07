@@ -1,6 +1,6 @@
 - name: devops course information
   hosts: web
-  # connection: local
+  connection: web
   vars: 
     course: "devops with 321"
     duration: 120
