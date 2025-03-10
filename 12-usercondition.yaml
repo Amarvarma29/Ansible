@@ -4,7 +4,7 @@
   tasks: 
   - name:
     ansible.builtin.command: id expence
-    register: user
+    register: user #user is the variable to store the outout from the above command
     ignore_errors: true
   
   - name: print the user information
