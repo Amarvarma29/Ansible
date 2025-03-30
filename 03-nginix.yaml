@@ -1,5 +1,5 @@
 - name: install nginix
-  hosts: 54.88.23.70
+  hosts: 172.31.10.10
   become: yes #take sudo access
   tasks:
   - name: task 1 to install niginix
