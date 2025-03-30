@@ -1,12 +1,14 @@
 - name:
   hosts: web
-  vars_prompt:
+  vars_prompt: #to get variables from the prompt
   - name: course
     prompt: please enter the couse name
-    private: false #not confidential
+    private: false #if it is not a confidential
   - name: trainer
     prompt: please enter the trainer name
   - name: duration
+    prompt: please enter the duaration
+
 
   tasks: #giving variables from the prompt
   - name: 
