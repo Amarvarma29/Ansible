@@ -1,0 +1,6 @@
+- name: to get the vars from the arguments
+  hosts: web
+  tasks: 
+  - name: vars from args
+    ansible.builtin.debug:
+      msg: "hello{{name}}very{{}}"
