@@ -1,0 +1,22 @@
+- name: demo on filters
+  hosts: local
+  connection: local
+  tasks:
+  - name: print the default variable
+    ansible.builtin.debug: 
+      msg: "Hello {{ course | default ('ansible')}}"
+
+  - name: print the upper case
+    ansible.builtin.debug:
+      msg: "{{ greetings | upper }}"
+
+  - name: printn the lower case
+    ansible.builtin.debug:
+      msg: "{{ FIUYKGKUG | lower}}"
+
+      
+  - name: get the unique numbers in the list
+    vars:
+    numbers: [ 1,4,,5,6,4,45,6,5]
+    ansible.builtin.debug:
+      msg: "{{numbers | unique}}"
