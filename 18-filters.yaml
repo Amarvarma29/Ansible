@@ -24,3 +24,12 @@
       numbers: [ 1,4,5,6,4,45,6,5 ]
     ansible.builtin.debug:
       msg: "Hello{{ numbers | unique }}"
+
+  - name: convert dist to items
+    vars: 
+      course:
+        name: aws with devops
+        duration: 120 hrs
+        trainer: siva
+    ansible.builtin.debug:
+      msg: "dist to items {{ course | dist2items }}"
