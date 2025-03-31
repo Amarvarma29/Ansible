@@ -4,3 +4,9 @@
   - name: vars from args
     ansible.builtin.debug:
       msg: "hello{{name}}very{{greeting}}"
+
+
+#top level to take from the variables
+
+
+#from args
