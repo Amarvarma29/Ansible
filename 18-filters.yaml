@@ -8,15 +8,15 @@
 
   - name: print the upper case
     ansible.builtin.debug:
-      msg: "{{ greetings | upper }}"
+      msg: "Hello{{ greetings | upper }}"
 
   - name: printn the lower case
     ansible.builtin.debug:
-      msg: "{{ FIUYKGKUG | lower}}"
+      msg: "Hello{{ FIUYKGKUG | lower}}"
 
       
   - name: get the unique numbers in the list
     vars:
     numbers: [ 1,4,,5,6,4,45,6,5]
     ansible.builtin.debug:
-      msg: "{{numbers | unique}}"
+      msg: "Hello{{numbers | unique}}"
