@@ -32,4 +32,4 @@
         duration: 120 hrs
         trainer: siva
     ansible.builtin.debug:
-      msg: "dist to items {{ course | dist2items }}"
+      msg: "dist to items {{ course | dict2items }}"
