@@ -4,6 +4,8 @@
   tasks:
   - name: excute the command
     ansible.builtin.shell: ls -ltr > /tmp/output.txt
+  - name: get the output of the command
+    ansible.builtin.command: ls -ltr > /tmp/output.txt
 
 # shell module login within servers and excutes  
 # shell module login within servers and excutes
