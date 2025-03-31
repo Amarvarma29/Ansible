@@ -1,4 +1,4 @@
-- name: demo on filters
+- name: Demo on filters
   hosts: local
   conection: local
   tasks:
@@ -7,16 +7,20 @@
       msg: "Hello {{ course | default ('ansible') }}"
 
   - name: print the upper case
+    vars:
+      greetings: " Hello masteru "
     ansible.builtin.debug:
       msg: "Hello{{ greetings | upper }}"
 
   - name: printn the lower case
+    vars:
+      greetings: " Hello masteru "
     ansible.builtin.debug:
-      msg: "Hello{{ FIUYKGKUG | lower }}"
+      msg: "Hello{{ greetings | lower }}"
 
       
   - name: get the unique numbers in the list
     vars:
-    numbers: [ 1,4,,5,6,4,45,6,5 ]
+      numbers: [ 1,4,,5,6,4,45,6,5 ]
     ansible.builtin.debug:
       msg: "Hello{{ numbers | unique }}"
