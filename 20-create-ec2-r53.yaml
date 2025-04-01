@@ -10,7 +10,6 @@
       security_group: sg-0e3d08fb6363e4102
       image_id: ami-09c813fb71547fc4f
       loop: 
-      - { name: 'mysql'}
-      - { name: 'backend' }
-      - { name: 'frontend' }
-       
+      - { name: 'mysql' }
+      
+      
