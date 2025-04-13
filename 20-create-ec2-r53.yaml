@@ -17,6 +17,7 @@
       security_group: sg-081d20b1a8d4b83e7
       image_id: ami-09c813fb71547fc4f
     loop: instances
+    wantlist=True
     register: ec2_instances
 
   - name: print the output
