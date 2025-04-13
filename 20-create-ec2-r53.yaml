@@ -31,20 +31,20 @@
       ttl: 1
       value: "{{ item.instances[0].private_ip_address }}"
       wait: true
-      overwrite: true
+      overwrite: true #it can overwrite if already is there
     loop: "{{ ec2_instances.results }}"
 
-  # - name: create r53 public records
-  #   amazon.aws.route53:
-  #     state: present
-  #     zone: "{{ zone }}"
-  #     record: "{{ zone }}" #amarvarma81s.online
-  #     type: A 
-  #     ttl: 1
-  #     value: "{{ item.instances[0].public_ip_address }}"
-  #     wait: true
-  #   loop: "{{ ec2_instances.results }}"
-  #   when: item.item == "frontend"  
+  - name: create r53 public records
+    amazon.aws.route53:
+      state: present
+      zone: "{{ zone }}"
+      record: "{{ zone }}" #amarvarma81s.online
+      type: A 
+      ttl: 1
+      value: "{{ item.instances[0].public_ip_address }}"
+      wait: true
+    loop: "{{ ec2_instances.results }}"
+    when: item.item == "frontend"  
 
 
       
